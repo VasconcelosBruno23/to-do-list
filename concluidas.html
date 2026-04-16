@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskFlow - Concluídas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="site-container">
+
+        <header class="main-header">
+            <h1>TaskFlow</h1>
+            <p>Tarefas concluídas</p>
+        </header>
+
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="nova-tarefa.html">Criar Novas</a></li>
+                <li><a href="em-aberto.html">Em Aberto</a></li>
+                <li><a href="concluidas.html">Concluídas</a></li>
+                <li><a href="vencidas.html">Vencidas</a></li>
+            </ul>
+        </nav>
+
+        <main class="main-content">
+
+            <section class="tasks-section">
+                <h2>Lista de Tarefas Concluídas</h2>
+                <p>Total de tarefas concluídas: <span id="completed-page-count">0</span></p>
+
+                <div id="completed-task-list" class="task-list">
+                    <!-- As tarefas serão inseridas aqui pelo JavaScript -->
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="main-footer">
+            <p>&copy; 2026 - TaskFlow</p>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

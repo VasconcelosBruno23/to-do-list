@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskFlow - Criar Novas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="site-container">
+
+        <header class="main-header">
+            <h1>TaskFlow</h1>
+            <p>Criação de novas tarefas</p>
+        </header>
+
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="nova-tarefa.html">Criar Novas</a></li>
+                <li><a href="em-aberto.html">Em Aberto</a></li>
+                <li><a href="concluidas.html">Concluídas</a></li>
+                <li><a href="vencidas.html">Vencidas</a></li>
+            </ul>
+        </nav>
+
+        <main class="main-content">
+
+            <section class="form-section">
+                <h2>Adicionar Nova Tarefa</h2>
+
+                <form id="task-form">
+                    <label for="task-title">Nome da tarefa:</label>
+                    <input type="text" id="task-title" placeholder="Digite o nome da tarefa" maxlength="50">
+
+                    <label for="task-description">Descrição:</label>
+                    <textarea id="task-description" placeholder="Descreva a tarefa" maxlength="150"></textarea>
+
+                    <label for="task-priority">Prioridade:</label>
+                    <select id="task-priority">
+                        <option value="alta">Alta</option>
+                        <option value="media">Média</option>
+                        <option value="baixa">Baixa</option>
+                    </select>
+
+                    <label for="task-deadline">Prazo:</label>
+                    <input type="date" id="task-deadline">
+
+                    <p id="form-message" class="form-message"></p>
+
+                    <button type="submit" id="add-task-btn">Adicionar Tarefa</button>
+                </form>
+            </section>
+
+            <section class="preview-section">
+                <h2>Tarefas em Aberto</h2>
+                <p>Quantidade atual: <span id="open-limit-info">0</span> / 10 tarefas.</p>
+
+                <div id="open-task-list" class="task-list">
+                    <!-- As tarefas serão inseridas aqui pelo JavaScript -->
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="main-footer">
+            <p>&copy; 2026 - TaskFlow</p>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
